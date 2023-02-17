@@ -12,6 +12,8 @@ my_catalog = my_cur.fetchall()
 
 df = pd.DataFrame(my_catalog)
 
-streamlit.write(df)
+st.write(df)
 
 color_list = df[0].values.tolist()
+
+print(color_list)
